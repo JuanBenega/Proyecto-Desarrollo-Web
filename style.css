@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*estilos de fuentes posibles*/
+@font-face {
+    font-family: "ananda2";
+    src: url('ananda_2/Ananda\ Personal\ Use.ttf');
+    font-family: "hello-vallentica";
+    src: url('hello_valentica/Hello\ Valentina.ttf');
+    font-family: "comfortaa";
+    src: url('comfortaa/Comfortaa-Regular.ttf');
+}
+
+/***************************************************** GRID */
+
+.index-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.5fr 3fr 0.5fr;
+    grid-template-areas:
+        "header header header header"
+        "nosotros nosotros imagenes imagenes"
+        "footer footer footer footer";
+    gap: 10px;
+}
+
+.bien-entre-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr auto 0.5fr;
+    grid-template-areas:
+        "header"
+        "art-bien"
+        "footer";
+    gap: 10px;
+}
+
+.masaje-grid {
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: 0.5fr auto auto 0.5fr;
+    grid-template-areas:
+        "header header header header"
+        "masaje1 masaje1 masaje2 masaje2"
+        "masaje1 masaje1 masaje3 masaje3"
+        "footer footer footer footer";
+    gap: 10px;
+}
+
+.turno-grid {
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: 0.5fr auto auto 0.5fr;
+    grid-template-areas:
+        "header header header header"
+        "formulario formulario calendario calendario"
+        ". mapa mapa ."
+        "footer footer footer footer";
+    gap: 10px;
+}
+
+/***************************************************** HEADER */
+.header {
+    grid-area: header;
+}
+
+/*estilo Nav Header*/
+.header nav {
+    width: 90%;
+    display: flex;
+    padding-left: 75px;
+    justify-content: space-between;
+    align-content: center;
+}
+
+/*Estilo Logo Header*/
+.header-logo {
+    width: 20%;
+    padding: 10px 50px 20px;
+    margin: 20px;
+}
+
+/*Estilo Menú y Redes*/
+.header-options {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+/*Estilos redes sociales*/
+.header-social {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/*Estilos Menú*/
+.header nav div ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+/*Estilos ítems menú header*/
+.header nav div ul li a {
+    background-color: #67b967;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.438);
+}
+
+.header nav div ul li a:hover {
+    background-color: lightgray;
+    color: #67b967;
+    box-shadow: none;
+}
+
+
+/******************************************************** FOOTER */
+.footer {
+    grid-area: footer;
+    background-color: #67b967;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Estilo nav footer*/
+.footer nav {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*estilo redes sociales footer*/
+.footer-social {
+    width: 20%;
+    display: flex;
+}
+
+/*estilo menú footer*/
+.footer nav ul {
+    width: 30%;
+    height: 100%;
+    list-style: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+/*estilo ítems menú footer*/
+.footer nav ul li a {
+    padding: 20px 0;
+    text-decoration: none;
+    color: black;
+}
+
+.footer nav ul li a:hover {
+    color: white;
+}
+
+/*estilo logo footer*/
+.footer-logo {
+    width: 15%;
+}
+
+
+
+/****************************************************** MAIN-INDEX */
+
+
+/*estilos Main Index*/
+.us {
+    grid-area: nosotros;
+    font-family: "comfortaa";
+    font-size: 2rem;
+    padding: 200px 100px;
+    align-content: center;
+
+}
+
+.us h1 {
+    text-align: center;
+}
+
+/*Estilos imágenes Main*/
+.main-images {
+    grid-area: imagenes;
+    padding-right: 20px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.main-pic {
+    width: 40%;
+    object-fit: cover;
+    -webkit-box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
+    box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
+    margin: 10px 0;
+}
+
+
+/********************************** MAIN BIENESTAR Y ENTRENAMIENTO */
+
+.main-bien-entre {
+    grid-area: art-bien;
+    width: 90%;
+    padding: 50px 100px;
+}
+
+.main-bien-entre section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+.main-bien-entre section img {
+    width: 30%;
+    object-fit: cover;
+    -webkit-box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
+    box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
+}
+
+
+.main-bien-entre section article {
+    font-family: "comfortaa";
+    font-size: 2rem;
+    width: 60%;
+}
+
+
+/**************************************************** MAIN MASAJES */
+
+.masaje-grid section {
+    width: 80%;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.masaje-1 {
+    grid-area: masaje1;
+}
+
+.masaje-2 {
+    grid-area: masaje2;
+}
+
+.masaje-3 {
+    grid-area: masaje3;
+    width: 50%;
+    justify-content: center;
+}
+
+/*Estilo imágenes masajes*/
+.masaje-grid section img {
+    width: 80%;
+    object-fit: cover;
+    -webkit-box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
+    box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
+}
+
+/*Estilo texto imágenes masajes*/
+.masaje-grid section article {
+    width: 100%;
+    font-family: "comfortaa";
+    font-size: 1rem;
+    padding-top: 30px;
+}
+
+.masaje-grid section article h1 {
+    text-align: center;
+}
+
+
+/****************************************************** MAIN TURNO */
+
+/*estilo de formulario estimado*/
+.turno-form {
+    grid-area: formulario;
+    width: 80%;
+    margin-left: 50px;
+    padding: 50px;
+    font-family: "comfortaa";
+    font-size: 2rem;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.turno-form ul {
+    list-style: none;
+    padding-top: 10px;
+}
+
+/*estilo de calendario de horarios disponibles*/
+.turno-cal {
+    grid-area: calendario;
+    width: 90%;
+    margin-left: 20px;
+}
+
+/*estilo de mapa*/
+.turno-map {
+    grid-area: mapa;
+    font-family: "comfortaa";
+    font-size: 1.2rem;
+    justify-self: center;
+}
+
+
+
+/***************************************************** RESPONSIVE */
+
+@media only screen and (max-width:450px) {
+    .index-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto auto 1fr;
+        grid-template-areas:
+            "header"
+            "nosotros"
+            "imagenes"
+            "footer";
+        gap: 5px;
+    }
+
+    .bien-entre-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr auto 0.5fr;
+        grid-template-areas:
+            "header"
+            "art-bien"
+            "footer";
+        gap: 5px;
+    }
+
+    .masaje-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr auto auto auto 0.5fr;
+        grid-template-areas:
+            "header"
+            "masaje1"
+            "masaje2"
+            "masaje3"
+            "footer";
+        gap: 10px;
+    }
+
+    .turno-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr auto auto auto 0.5fr;
+        grid-template-areas:
+            "header"
+            "formulario"
+            "calendario"
+            "mapa"
+            "footer";
+        gap: 10px;
+        justify-content: stretch;
+    }
+
+    .header nav {
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 50px;
+    }
+
+    .header-logo {
+        width: 70%;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .header-options {
+        display: none;
+    }
+
+    .footer nav {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .footer-social {
+        width: 70%;
+        padding: 20px 0;
+    }
+
+    .footer nav ul {
+        width: 60%;
+        font-size: 1rem;
+    }
+
+    .footer nav ul li a {
+        padding: 5px 0;
+    }
+
+    .footer-logo {
+        width: 50%;
+    }
+
+    .us {
+        font-size: 1.5rem;
+        padding: 20px 10px;
+    }
+
+    .main-images {
+        flex-direction: column;
+    }
+
+    .main-pic {
+        width: 90%;
+        margin: 5px 0;
+    }
+
+    .main-bien-entre {
+        width: 90%;
+        padding: 5px 10px;
+    }
+
+    .main-bien-entre section {
+        flex-direction: column;
+        padding-left: 5px;
+        margin: 10px 0px;
+    }
+
+    .entrenamiento-par {
+        flex-direction: column-reverse;
+    }
+
+    .main-bien-entre section img {
+        width: 80%;
+    }
+
+    .main-bien-entre section article {
+        font-size: 1rem;
+        width: 80%;
+        margin: 10px 0px;
+    }
+
+    .main-bien-entre section article h1 {
+        text-align: center;
+    }
+
+    .masaje-grid section {
+        justify-self: center;
+        margin: 10px;
+    }
+
+    .masaje-grid section article {
+        font-size: 1rem;
+        padding-top: 10px;
+    }
+
+    .turno-form {
+        width: 70%;
+        margin-left: 10px;
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+
+    .turno-cal {
+        display: none;
+    }
+
+    .turno-map {
+        font-size: 0.75rem;
+        padding: 10px;
+    }
+
+}
