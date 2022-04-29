@@ -64,6 +64,7 @@
 /***************************************************** HEADER */
 .header {
     grid-area: header;
+    background-image: linear-gradient(to top, white, lightgray);
 }
 
 /*estilo Nav Header*/
@@ -129,7 +130,7 @@
 /******************************************************** FOOTER */
 .footer {
     grid-area: footer;
-    background-color: #67b967;
+    background-image: linear-gradient(to bottom, white, #67b967);
     display: flex;
     justify-content: center;
     align-items: center;
