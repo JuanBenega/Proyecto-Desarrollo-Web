@@ -64,7 +64,7 @@
 /***************************************************** HEADER */
 .header {
     grid-area: header;
-    background-image: linear-gradient(to top, white, lightgray);
+    background-image: linear-gradient(to top, white, #6790B9);
 }
 
 /*estilo Nav Header*/
