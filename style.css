@@ -213,15 +213,6 @@
 }
 
 /*Estilos imágenes Main*/
-.main-images {
-    /* grid-area: imagenes; */
-    padding-right: 20px;
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
 .main-pic {
     width: 90%;
     object-fit: cover;
@@ -236,31 +227,25 @@
 
 .main-bien-entre {
     grid-area: art-bien;
-    width: 90%;
+    width: 95%;
     padding: 50px 100px;
+    font-family: "comfortaa";
+    font-size: 1.5rem;
 }
 
-.main-bien-entre section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 50px;
-    padding-top: 30px;
-}
-
-.main-bien-entre section img {
-    width: 30%;
-    object-fit: cover;
+.main-bien-entre img {
+    margin: 25px 0px;
     -webkit-box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
     -moz-box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
     box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
 }
 
+.article {
+    align-self: center;
+}
 
-.main-bien-entre section article {
-    font-family: "comfortaa";
-    font-size: 2rem;
-    width: 60%;
+.main-bien-entre h1 {
+    font-weight: bold;
 }
 
 
