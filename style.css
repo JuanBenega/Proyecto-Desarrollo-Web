@@ -43,21 +43,20 @@
     grid-template-rows: 0.5fr auto auto 0.5fr;
     grid-template-areas:
         "header header header header"
-        "masaje1 masaje1 masaje2 masaje2"
-        "masaje1 masaje1 masaje3 masaje3"
+        "masaje masaje masaje masaje"
+        "masaje masaje masaje masaje"
         "footer footer footer footer";
     gap: 10px;
 }
 
 .turno-grid {
     display: grid;
-    grid-template-columns: repeat (4, 1fr);
-    grid-template-rows: 0.5fr auto auto 0.5fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr auto 0.5fr;
     grid-template-areas:
-        "header header header header"
-        "formulario formulario calendario calendario"
-        ". mapa mapa ."
-        "footer footer footer footer";
+        "header"
+        "formulario"
+        "footer";
     gap: 10px;
 }
 
@@ -251,31 +250,20 @@
 
 /**************************************************** MAIN MASAJES */
 
-.masaje-grid section {
-    width: 80%;
-    margin: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.masajes {
+    grid-area: masaje; 
+    font-family: "comfortaa";
+    font-size: 1rem;
+    padding-top: 30px;
 }
 
-.masaje-1 {
-    grid-area: masaje1;
-}
-
-.masaje-2 {
-    grid-area: masaje2;
-}
-
-.masaje-3 {
-    grid-area: masaje3;
-    width: 50%;
-    justify-content: center;
+.masajes h1 {
+    text-align: center;
+    font-weight: bold;
 }
 
 /*Estilo imágenes masajes*/
-.masaje-grid section img {
+.masajes img {
     width: 80%;
     object-fit: cover;
     -webkit-box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
@@ -283,53 +271,36 @@
     box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
 }
 
-/*Estilo texto imágenes masajes*/
-.masaje-grid section article {
-    width: 100%;
-    font-family: "comfortaa";
-    font-size: 1rem;
-    padding-top: 30px;
-}
-
-.masaje-grid section article h1 {
-    text-align: center;
-}
 
 
 /****************************************************** MAIN TURNO */
 
 /*estilo de formulario estimado*/
 .turno-form {
-    grid-area: formulario;
-    width: 80%;
-    margin-left: 50px;
-    padding: 50px;
+    /* grid-area: formulario; */
+    /* width: 80%; */
+    /* margin-left: 10px; */
+    /* padding: 50px; */
     font-family: "comfortaa";
-    font-size: 2rem;
-    background-color: lightgray;
-    display: flex;
-    flex-direction: column;
+    font-size: 1rem;
+    /* background-color: lightgray; */
+    /* display: flex;
+    flex-direction: column; */
 }
 
-
+/* 
 .turno-form ul {
     list-style: none;
     padding-top: 10px;
-}
+} */
 
 /*estilo de calendario de horarios disponibles*/
-.turno-cal {
-    grid-area: calendario;
-    width: 90%;
-    margin-left: 20px;
-}
 
 /*estilo de mapa*/
 .turno-map {
-    grid-area: mapa;
     font-family: "comfortaa";
     font-size: 1.2rem;
-    justify-self: center;
+    /* justify-self: center; */
 }
 
 
