@@ -17,12 +17,12 @@
 
 .index-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.5fr 3fr 0.5fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr auto 0.5fr;
     grid-template-areas:
-        "header header header header"
-        "nosotros nosotros nosotros nosotros"
-        "footer footer footer footer";
+        "header"
+        "nosotros"
+        "footer";
     gap: 10px;
 }
 
@@ -39,13 +39,12 @@
 
 .masaje-grid {
     display: grid;
-    grid-template-columns: repeat (4, 1fr);
-    grid-template-rows: 0.5fr auto auto 0.5fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr auto 0.5fr;
     grid-template-areas:
-        "header header header header"
-        "masaje masaje masaje masaje"
-        "masaje masaje masaje masaje"
-        "footer footer footer footer";
+        "header"
+        "masaje"
+        "footer";
     gap: 10px;
 }
 
@@ -69,10 +68,8 @@
 /*estilo Nav Header*/
 .header nav {
     width: 95%;
-    /* display: flex; */
     padding-left: 75px;
-    /* justify-content: space-between;
-    align-content: center; */
+
 }
 
 /*Estilo Logo Header*/
@@ -98,16 +95,6 @@
     padding: 20px 0;
 }
 
-/*Estilos Menú*/
-/* .header nav div ul {
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    font-size: 1.5rem;
-    font-weight: bold;
-
-} */
 
 .nav-buttons {
     width: 50%;
@@ -119,8 +106,6 @@
     font-size: 1.3rem;
     background-color: #67b967;
     border-radius: 10px;
-    /* padding: 5px; */
-    /* text-decoration: none; */
     color: white;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.438);
     transition: all 0.5s;
@@ -197,8 +182,6 @@
     grid-area: nosotros;
     font-family: "comfortaa";
     font-size: 2rem;
-    /* align-content: center; */
-
 }
 
 .us h1 {
@@ -229,7 +212,7 @@
     width: 95%;
     padding: 50px 100px;
     font-family: "comfortaa";
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .main-bien-entre img {
@@ -253,7 +236,7 @@
 .masajes {
     grid-area: masaje; 
     font-family: "comfortaa";
-    font-size: 1rem;
+    font-size: 1.3rem;
     padding-top: 30px;
 }
 
@@ -277,30 +260,14 @@
 
 /*estilo de formulario estimado*/
 .turno-form {
-    /* grid-area: formulario; */
-    /* width: 80%; */
-    /* margin-left: 10px; */
-    /* padding: 50px; */
     font-family: "comfortaa";
     font-size: 1rem;
-    /* background-color: lightgray; */
-    /* display: flex;
-    flex-direction: column; */
 }
-
-/* 
-.turno-form ul {
-    list-style: none;
-    padding-top: 10px;
-} */
-
-/*estilo de calendario de horarios disponibles*/
 
 /*estilo de mapa*/
 .turno-map {
     font-family: "comfortaa";
     font-size: 1.2rem;
-    /* justify-self: center; */
 }
 
 
