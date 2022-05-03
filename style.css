@@ -266,6 +266,7 @@
 
 /*estilo de mapa*/
 .turno-map {
+    align-items: flex-start;
     font-family: "comfortaa";
     font-size: 1.2rem;
 }
@@ -274,85 +275,23 @@
 
 /***************************************************** RESPONSIVE */
 
-/* @media only screen and (max-width:450px) {
-    .index-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr auto auto 1fr;
-        grid-template-areas:
-            "header"
-            "nosotros"
-            "imagenes"
-            "footer";
-        gap: 5px;
-    }
-
-    .bien-entre-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr auto 0.5fr;
-        grid-template-areas:
-            "header"
-            "art-bien"
-            "footer";
-        gap: 5px;
-    }
-
-    .masaje-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr auto auto auto 0.5fr;
-        grid-template-areas:
-            "header"
-            "masaje1"
-            "masaje2"
-            "masaje3"
-            "footer";
-        gap: 10px;
-    }
-
-    .turno-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr auto auto auto 0.5fr;
-        grid-template-areas:
-            "header"
-            "formulario"
-            "calendario"
-            "mapa"
-            "footer";
-        gap: 10px;
-        justify-content: stretch;
-    }
-
-    .header nav {
-        flex-direction: column;
-        justify-content: center;
-        padding-left: 50px;
-    }
-
-    .header-logo {
-        width: 70%;
-        padding: 5px;
-        margin: 5px;
-    }
-
-    .header-options {
-        display: none;
-    }
+ @media only screen and (max-width:576px) {
 
     .footer nav {
         flex-direction: column-reverse;
-        justify-content: center;
+        justify-self: center;
     }
 
     .footer-social {
         width: 70%;
-        padding: 20px 0;
+        padding-top: 20px;
+        padding-left:  50px;
+        align-self: flex-start;
     }
 
     .footer nav ul {
         width: 60%;
+        align-self: flex-start;
         font-size: 1rem;
     }
 
@@ -362,6 +301,8 @@
 
     .footer-logo {
         width: 50%;
+        align-self: flex-start;
+        padding-left: 70px;
     }
 
     .us {
@@ -369,63 +310,37 @@
         padding: 20px 10px;
     }
 
-    .main-images {
-        flex-direction: column;
-    }
-
-    .main-pic {
-        width: 90%;
-        margin: 5px 0;
-    }
 
     .main-bien-entre {
-        width: 90%;
-        padding: 5px 10px;
-    }
-
-    .main-bien-entre section {
-        flex-direction: column;
-        padding-left: 5px;
-        margin: 10px 0px;
+        font-size: 1rem;
     }
 
     .entrenamiento-par {
+        display: flex;
         flex-direction: column-reverse;
     }
 
-    .main-bien-entre section img {
-        width: 80%;
-    }
 
-    .main-bien-entre section article {
-        font-size: 1rem;
-        width: 80%;
-        margin: 10px 0px;
-    }
 
     .main-bien-entre section article h1 {
         text-align: center;
     }
 
-    .masaje-grid section {
+    /* .masaje-grid section {
         justify-self: center;
         margin: 10px;
-    }
+    } */
 
     .masaje-grid section article {
         font-size: 1rem;
         padding-top: 10px;
     }
-
+ 
     .turno-form {
-        width: 70%;
+        /* width: 70%;
         margin-left: 10px;
-        padding: 10px;
-        font-size: 1.2rem;
-    }
-
-    .turno-cal {
-        display: none;
+        padding: 10px; */
+        font-size: 0.75rem;
     }
 
     .turno-map {
@@ -433,4 +348,4 @@
         padding: 10px;
     }
 
-} */
+} 
