@@ -13,51 +13,6 @@
     src: url('comfortaa/Comfortaa-Regular.ttf');
 }
 
-/***************************************************** GRID */
-
-.index-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr auto 0.5fr;
-    grid-template-areas:
-        "header"
-        "nosotros"
-        "footer";
-    gap: 10px;
-}
-
-.bien-entre-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr auto 0.5fr;
-    grid-template-areas:
-        "header"
-        "art-bien"
-        "footer";
-    gap: 10px;
-}
-
-.masaje-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr auto 0.5fr;
-    grid-template-areas:
-        "header"
-        "masaje"
-        "footer";
-    gap: 10px;
-}
-
-.turno-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr auto 0.5fr;
-    grid-template-areas:
-        "header"
-        "formulario"
-        "footer";
-    gap: 10px;
-}
 
 /***************************************************** HEADER */
 .header {
@@ -121,44 +76,28 @@
 
 /******************************************************** FOOTER */
 .footer {
-    grid-area: footer;
     background-image: linear-gradient(to bottom, white, #67b967);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/*Estilo nav footer*/
-.footer nav {
-    width: 70%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 /*estilo redes sociales footer*/
-.footer-social {
-    width: 20%;
-    display: flex;
+.footer nav {
+    width: 70%;
 }
 
 /*estilo menú footer*/
-.footer nav ul {
-    width: 30%;
-    height: 100%;
+.footer ul {
     list-style: none;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-
 }
 
 /*estilo ítems menú footer*/
 .footer nav ul li a {
-    padding: 20px 0;
     text-decoration: none;
     color: black;
 }
@@ -167,19 +106,12 @@
     color: white;
 }
 
-/*estilo logo footer*/
-.footer-logo {
-    width: 15%;
-}
 
 
 
 /****************************************************** MAIN-INDEX */
 
-
-/*estilos Main Index*/
 .us {
-    grid-area: nosotros;
     font-family: "comfortaa";
     font-size: 2rem;
 }
@@ -208,7 +140,6 @@
 /********************************** MAIN BIENESTAR Y ENTRENAMIENTO */
 
 .main-bien-entre {
-    grid-area: art-bien;
     width: 95%;
     padding: 50px 100px;
     font-family: "comfortaa";
@@ -234,7 +165,6 @@
 /**************************************************** MAIN MASAJES */
 
 .masajes {
-    grid-area: masaje; 
     font-family: "comfortaa";
     font-size: 1.3rem;
     padding-top: 30px;
@@ -258,7 +188,6 @@
 
 /****************************************************** MAIN TURNO */
 
-/*estilo de formulario estimado*/
 .turno-form {
     font-family: "comfortaa";
     font-size: 1rem;
@@ -276,34 +205,6 @@
 /***************************************************** RESPONSIVE */
 
  @media only screen and (max-width:576px) {
-
-    .footer nav {
-        flex-direction: column-reverse;
-        justify-self: center;
-    }
-
-    .footer-social {
-        width: 70%;
-        padding-top: 20px;
-        padding-left:  50px;
-        align-self: flex-start;
-    }
-
-    .footer nav ul {
-        width: 60%;
-        align-self: flex-start;
-        font-size: 1rem;
-    }
-
-    .footer nav ul li a {
-        padding: 5px 0;
-    }
-
-    .footer-logo {
-        width: 50%;
-        align-self: flex-start;
-        padding-left: 70px;
-    }
 
     .us {
         font-size: 1.5rem;
@@ -326,21 +227,14 @@
         text-align: center;
     }
 
-    /* .masaje-grid section {
-        justify-self: center;
-        margin: 10px;
-    } */
 
     .masaje-grid section article {
         font-size: 1rem;
         padding-top: 10px;
     }
- 
+
     .turno-form {
-        /* width: 70%;
-        margin-left: 10px;
-        padding: 10px; */
-        font-size: 0.75rem;
+         font-size: 0.75rem;
     }
 
     .turno-map {
@@ -348,4 +242,8 @@
         padding: 10px;
     }
 
-} 
+    .turno-map iframe {
+        width: 95vw;
+    }
+
+}
