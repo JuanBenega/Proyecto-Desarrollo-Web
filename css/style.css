@@ -23,36 +23,8 @@
 .header nav {
     width: 95%;
     padding-left: 75px;
-
 }
 
-/*Estilo Logo Header*/
-.header-logo {
-    width: 20%;
-    padding: 10px 50px 20px;
-    margin: 20px;
-}
-
-/*Estilo Menú y Redes*/
-.header-options {
-    width: 40%;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-}
-
-/*Estilos redes sociales*/
-.header-social {
-    width: 30%;
-    display: flex;
-    align-items: center;
-    padding: 20px 0;
-}
-
-
-.nav-buttons {
-    width: 50%;
-}
 
 /*Estilos ítems menú header*/
  .nav-button {
@@ -207,7 +179,7 @@
  @media only screen and (max-width:576px) {
 
     .us {
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding: 20px 10px;
     }
 
