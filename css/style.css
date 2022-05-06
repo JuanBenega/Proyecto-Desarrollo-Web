@@ -25,6 +25,9 @@
     padding-left: 75px;
 }
 
+.header-logo {
+    width: 25%;
+}
 
 /*Estilos ítems menú header*/
  .nav-button {
@@ -181,6 +184,10 @@
     .header nav {
         width: auto;
         padding-left: 0px;
+    }
+
+    .header-logo {
+        width: 60%;
     }
 
     .us {
