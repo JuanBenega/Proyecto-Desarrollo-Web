@@ -74,7 +74,7 @@
 }
 
 .footer nav ul li a:hover {
-    color: white;
+    color: whitegit;
 }
 
 
@@ -177,6 +177,11 @@
 /***************************************************** RESPONSIVE */
 
  @media only screen and (max-width:576px) {
+
+    .header nav {
+        width: auto;
+        padding-left: 0px;
+    }
 
     .us {
         font-size: 1rem;
