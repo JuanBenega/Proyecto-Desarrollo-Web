@@ -1,0 +1,46 @@
+
+/****************************************************** MAIN-INDEX */
+.nosotros {
+    font-family: $fuente;
+    font-size: $size-fuente-nosotros;
+
+    div {
+        div {
+            div {
+                h1 {
+                    padding: 100px 0px 0px 0px;
+                    text-align: center;
+                    font-weight: bold;
+                }
+
+                p {
+                    padding: 20px 50px;
+
+                    @media only screen and (max-width:576px) {
+                        padding: 5px 5px;
+                        text-align: center;
+                    }
+                }
+            }
+
+            div {
+                div {
+                    div {
+                        img {
+                            /*Estilos imágenes Main*/
+                            object-fit: cover;
+                            -webkit-box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
+                            -moz-box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
+                            box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
+                            margin: 10px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width:576px) {
+        font-size: $size-fuente-responsive;
+        padding: 20px 10px;
+    }
+}

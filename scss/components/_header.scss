@@ -1,0 +1,44 @@
+header {
+    background-image: linear-gradient(to top, white, #aa79b3);
+
+    nav {
+        /*estilo Nav Header*/
+        width: 95%;
+        padding-left: 75px;
+
+        div {
+            a {
+                width: 25%;
+
+                @media only screen and (max-width:576px) {
+                    width: 60%;
+                }
+            }
+
+            div {
+                div {
+                    a {
+                        /*Estilos ítems menú header*/
+                        font-family: $fuente;
+                        font-size: $size-fuente-header;
+                        @extend %boton-menu;
+
+                        &:hover {
+                            @extend %boton-menu-hover;
+                            transform: scale(110%);
+                        }
+
+                        @media only screen and (max-width:576px) {
+                            font-size: $size-fuente-responsive;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width:576px) {
+            width: auto;
+            padding-left: 0px;
+        }
+    }
+}
