@@ -21,6 +21,7 @@ header {
                         /*Estilos ítems menú header*/
                         font-family: $fuente;
                         font-size: $size-fuente-header;
+                        width: auto;
                         @extend %boton-menu;
 
                         &:hover {

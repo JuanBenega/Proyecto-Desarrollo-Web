@@ -22,3 +22,10 @@
     color: #67b967;
     box-shadow: none;
 }
+
+%sombra-imagenes {
+    margin: 25px 0px;
+    -webkit-box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
+    box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
+}
