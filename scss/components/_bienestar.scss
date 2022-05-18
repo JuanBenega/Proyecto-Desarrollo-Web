@@ -9,7 +9,7 @@
             padding: $pad-h1;
         }
 
-        // Articulo 1
+        // Articulos
         div {
             div {
                 img {
@@ -33,7 +33,7 @@
     }
 
     @media only screen and (max-width:576px) {
-        font-size: 1rem;
+        font-size: $size-fuente-responsive;
         text-align: center;
     }
 }

@@ -1,0 +1,43 @@
+.turno {
+    div {
+        font-family: $fuente;
+        font-size: $size-fuente-header;
+
+        h1 {
+            font-weight: bold;
+            text-align: center;
+            padding: $pad-h1;
+        }
+        
+        div {
+            div {
+                form {
+                    font-family: $fuente;
+                    font-size: $size-fuente-formulario;
+
+                    @media only screen and (max-width:576px) {
+                        font-size: $size-fuente-responsive;
+                    }
+                }
+            }
+
+            div {
+                align-items: flex-start;
+                font-family: $fuente;
+                font-size: $size-fuente-mapa;
+
+                iframe {
+
+                    @media only screen and (max-width:576px) {
+                        width: 95vw;
+                    }
+                }
+
+                @media only screen and (max-width:576px) {
+                    font-size: $size-fuente-responsive;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}

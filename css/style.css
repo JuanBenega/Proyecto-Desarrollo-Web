@@ -32,7 +32,7 @@ header nav div div div a:hover {
   box-shadow: none;
 }
 
-.main-bien-entre div div div img {
+.masajes div div div div div img, .main-bien-entre div div div img {
   margin: 25px 0px;
   -webkit-box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
   -moz-box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
@@ -101,7 +101,7 @@ header nav div div div a:hover {
   box-shadow: none;
 }
 
-.main-bien-entre div div div img {
+.masajes div div div div div img, .main-bien-entre div div div img {
   margin: 25px 0px;
   -webkit-box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
   -moz-box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
@@ -195,6 +195,75 @@ footer nav div div div ul li a:hover {
   .main-bien-entre {
     font-size: 1rem;
     text-align: center;
+  }
+}
+
+.masajes div {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+}
+.masajes div h1 {
+  font-weight: bold;
+  text-align: center;
+  padding: 50px 0px;
+}
+@media only screen and (max-width: 576px) {
+  .masajes div h1 {
+    padding: 10px;
+  }
+}
+.masajes div div div div {
+  justify-content: center;
+}
+.masajes div div div div div img {
+  width: 100%;
+  object-fit: cover;
+}
+.masajes div div div div div {
+  text-align: center;
+  width: 90%;
+}
+.masajes div div div div div h2 {
+  font-weight: bold;
+}
+@media only screen and (max-width: 576px) {
+  .masajes div {
+    font-size: 1rem;
+  }
+}
+
+.turno div {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+}
+.turno div h1 {
+  font-weight: bold;
+  text-align: center;
+  padding: 50px 0px;
+}
+.turno div div div form {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+@media only screen and (max-width: 576px) {
+  .turno div div div form {
+    font-size: 1rem;
+  }
+}
+.turno div div div {
+  align-items: flex-start;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+}
+@media only screen and (max-width: 576px) {
+  .turno div div div iframe {
+    width: 95vw;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .turno div div div {
+    font-size: 1rem;
+    padding: 10px;
   }
 }
 
