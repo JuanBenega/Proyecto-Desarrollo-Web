@@ -6,7 +6,6 @@ footer {
     @extend %flex-evenly;
 
     nav {
-        /*estilo redes sociales footer*/
         width: 70%;
 
         div {
@@ -18,7 +17,10 @@ footer {
                         list-style: none;
                         font-weight: bold;
                         font-size: $size-fuente-footer;
-                        @extend %flex-column;
+                        // @extend %flex-column;
+
+                        /************************** Reemplazo el extend por un mixin para el desafío */
+                        @include flex-column ( flex, column, center);
 
                         li {
                             a {
