@@ -2,7 +2,7 @@
 /****************************************************** MAIN-INDEX */
 .nosotros {
     font-family: $fuente;
-    font-size: $size-fuente-nosotros;
+    font-size: $size-fuente-index;
 
     div {
         div {
@@ -17,10 +17,12 @@
                     padding: 100px 0px 0px 0px;
                     text-align: center;
                     font-weight: bold;
+
                 }
 
                 p {
                     padding: 20px 50px;
+                    font-size: $size-fuente-nosotros;
 
                     @media only screen and (max-width:576px) {
                         padding: 5px 5px;

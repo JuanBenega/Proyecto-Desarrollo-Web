@@ -155,6 +155,7 @@ footer nav div div div ul li a:hover {
 }
 .nosotros div div div p {
   padding: 20px 50px;
+  font-size: 1.5rem;
 }
 @media only screen and (max-width: 576px) {
   .nosotros div div div p {
