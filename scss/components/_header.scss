@@ -21,13 +21,7 @@ header {
                         font-family: $fuente;
                         font-size: $size-fuente-header;
                         width: auto;
-                        // @extend %boton-menu;
-                        
-                        /******************** Aplico un mapa para el desafio en reemplazo del extend */
-                        background-color: map-get($boton-menu, bg-color);
-                        border-radius: map-get($boton-menu, border-r);
-                        box-shadow:  map-get($boton-menu, box-s);
-                        transition:  map-get($boton-menu, trans);
+                        @extend %boton-menu;                
 
                         &:hover {
                             @extend %boton-menu-hover;

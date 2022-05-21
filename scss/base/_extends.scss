@@ -1,10 +1,9 @@
-/* Reemplazo este extend por un mixin para el desafío */
 
-/* %flex-column {
+%flex-column {
     display: flex;
     flex-direction: column;
     align-items: center;
-} */
+}
 
 %flex-evenly {
     display: flex;
@@ -12,14 +11,12 @@
     align-items: center;
 }
 
-/* Reemplazo este extend por un mapa para el desafío */
-
-/* %boton-menu {
+ %boton-menu {
     background-color: #67b967;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.438);
     transition: all 0.5s;
-}*/
+}
 
 %boton-menu-hover {
     background-color: lightgray;
