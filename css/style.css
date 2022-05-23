@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+.disclaimer {
+  display: none;
+}
+
 footer nav div div div ul {
   display: flex;
   flex-direction: column;
