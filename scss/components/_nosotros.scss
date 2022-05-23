@@ -1,4 +1,3 @@
-
 /****************************************************** MAIN-INDEX */
 .nosotros {
     font-family: $fuente;
@@ -7,26 +6,36 @@
     div {
         div {
             h1 {
-                padding: 100px 0px;
-                text-align: center;
-                font-weight: bold;
+                padding: $pad-h1;
+                @extend %texto-titulos;
+
+                @include phone {
+                    padding: 10px 5px;
+                }
             }
 
             div {
                 h2 {
-                    padding: 100px 0px 0px 0px;
-                    text-align: center;
-                    font-weight: bold;
+                    padding: 75px 0px;
+                    @extend %texto-titulos;
 
+                    @include phone {
+                        padding: 5px 5px;
+                    }
                 }
 
                 p {
                     padding: 20px 50px;
                     font-size: $size-fuente-nosotros;
 
-                    @media only screen and (max-width:576px) {
+                    span {
+                        font-weight: bold;
+                    }
+
+                    @include phone {
                         padding: 5px 5px;
                         text-align: center;
+                        font-size: $size-fuente-responsive;
                     }
                 }
             }
@@ -41,10 +50,25 @@
                     }
                 }
             }
+
+            & .imagenes {
+                @include phone {
+                    display: none;
+                }
+            }
+
+            & .carrusel {
+                display: none;
+
+                @include phone {
+                    display: unset;
+                    padding-bottom: 20px;
+                }
+            }
         }
     }
-    @media only screen and (max-width:576px) {
-        font-size: $size-fuente-responsive;
+
+    @include phone {
         padding: 20px 10px;
     }
 }

@@ -4,9 +4,13 @@
         font-size: $size-fuente-header;
 
         h1 {
-            font-weight: bold;
-            text-align: center;
+            @extend %texto-titulos;
             padding: $pad-h1;
+
+            
+            @include phone {
+                padding: 10px 5px;
+            }
         }
 
         // Articulos
@@ -21,19 +25,24 @@
                 align-self: center;
 
                 h2 {
-                    font-weight: bold;
+                    @extend %texto-titulos;
                 }
 
-                @media only screen and (max-width:576px) {
+                @include phone {
                     font-size: $size-fuente-responsive;
                     text-align: center;
+                    padding: $pad-bot;
                 }
             }
         }
     }
 
-    @media only screen and (max-width:576px) {
-        font-size: $size-fuente-responsive;
-        text-align: center;
+
+}
+
+.entrenamiento-par {
+    @include phone {
+        display: flex;
+        flex-direction: column-reverse;
     }
 }

@@ -10,7 +10,7 @@ header {
             a {
                 width: 25%;
 
-                @media only screen and (max-width:576px) {
+                @include phone {
                     width: 60%;
                 }
             }
@@ -28,7 +28,7 @@ header {
                             transform: scale(110%);
                         }
 
-                        @media only screen and (max-width:576px) {
+                        @include phone {
                             font-size: $size-fuente-responsive;
                         }
                     }
@@ -36,7 +36,7 @@ header {
             }
         }
 
-        @media only screen and (max-width:576px) {
+        @include phone {
             width: auto;
             padding-left: 0px;
         }

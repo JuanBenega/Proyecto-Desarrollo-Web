@@ -4,10 +4,6 @@
   padding: 0;
 }
 
-.disclaimer {
-  display: none;
-}
-
 footer nav div div div ul {
   display: flex;
   flex-direction: column;
@@ -38,6 +34,11 @@ header nav div div div a:hover {
   -webkit-box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
   -moz-box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
   box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
+}
+
+.turno div h1, .masajes div div div div div h2, .masajes div h1, .main-bien-entre div div div h2, .main-bien-entre div h1, .nosotros div div div h2, .nosotros div div h1 {
+  text-align: center;
+  font-weight: bold;
 }
 
 header {
@@ -108,6 +109,11 @@ header nav div div div a:hover {
   box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.36);
 }
 
+.turno div h1, .masajes div div div div div h2, .masajes div h1, .main-bien-entre div div div h2, .main-bien-entre div h1, .nosotros div div div h2, .nosotros div div h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
 footer {
   background-image: linear-gradient(to bottom, white, #67b967);
 }
@@ -136,31 +142,54 @@ footer nav div div div ul li a:hover {
   font-size: 2rem;
 }
 .nosotros div div h1 {
-  padding: 100px 0px;
-  text-align: center;
-  font-weight: bold;
+  padding: 50px 0px;
+}
+@media only screen and (max-width: 576px) {
+  .nosotros div div h1 {
+    padding: 10px 5px;
+  }
 }
 .nosotros div div div h2 {
-  padding: 100px 0px 0px 0px;
-  text-align: center;
-  font-weight: bold;
+  padding: 75px 0px;
+}
+@media only screen and (max-width: 576px) {
+  .nosotros div div div h2 {
+    padding: 5px 5px;
+  }
 }
 .nosotros div div div p {
   padding: 20px 50px;
   font-size: 1.5rem;
 }
+.nosotros div div div p span {
+  font-weight: bold;
+}
 @media only screen and (max-width: 576px) {
   .nosotros div div div p {
     padding: 5px 5px;
     text-align: center;
+    font-size: 1rem;
   }
 }
 .nosotros div div div div div img {
   object-fit: cover;
 }
 @media only screen and (max-width: 576px) {
+  .nosotros div div .imagenes {
+    display: none;
+  }
+}
+.nosotros div div .carrusel {
+  display: none;
+}
+@media only screen and (max-width: 576px) {
+  .nosotros div div .carrusel {
+    display: unset;
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 576px) {
   .nosotros {
-    font-size: 1rem;
     padding: 20px 10px;
   }
 }
@@ -170,26 +199,28 @@ footer nav div div div ul li a:hover {
   font-size: 1.3rem;
 }
 .main-bien-entre div h1 {
-  font-weight: bold;
-  text-align: center;
   padding: 50px 0px;
+}
+@media only screen and (max-width: 576px) {
+  .main-bien-entre div h1 {
+    padding: 10px 5px;
+  }
 }
 .main-bien-entre div div div {
   align-self: center;
-}
-.main-bien-entre div div div h2 {
-  font-weight: bold;
 }
 @media only screen and (max-width: 576px) {
   .main-bien-entre div div div {
     font-size: 1rem;
     text-align: center;
+    padding: 10px;
   }
 }
+
 @media only screen and (max-width: 576px) {
-  .main-bien-entre {
-    font-size: 1rem;
-    text-align: center;
+  .entrenamiento-par {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 
@@ -198,13 +229,11 @@ footer nav div div div ul li a:hover {
   font-size: 1.3rem;
 }
 .masajes div h1 {
-  font-weight: bold;
-  text-align: center;
   padding: 50px 0px;
 }
 @media only screen and (max-width: 576px) {
   .masajes div h1 {
-    padding: 10px;
+    padding: 10px 5px;
   }
 }
 .masajes div div div div {
@@ -218,8 +247,10 @@ footer nav div div div ul li a:hover {
   text-align: center;
   width: 90%;
 }
-.masajes div div div div div h2 {
-  font-weight: bold;
+@media only screen and (max-width: 576px) {
+  .masajes div div div div div {
+    padding: 10px;
+  }
 }
 @media only screen and (max-width: 576px) {
   .masajes div {
@@ -232,8 +263,6 @@ footer nav div div div ul li a:hover {
   font-size: 1.3rem;
 }
 .turno div h1 {
-  font-weight: bold;
-  text-align: center;
   padding: 50px 0px;
 }
 .turno div div div form {

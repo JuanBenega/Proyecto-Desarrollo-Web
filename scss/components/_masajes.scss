@@ -4,12 +4,11 @@
         font-size: $size-fuente-header;
 
         h1 {
-            font-weight: bold;
-            text-align: center;
+            @extend %texto-titulos;
             padding: $pad-h1;
 
-            @media only screen and (max-width:576px) {
-                padding: 10px;
+            @include phone {
+                padding: 10px 5px;
             }
         }
 
@@ -33,14 +32,19 @@
                         width: 90%;
 
                         h2 {
-                            font-weight: bold;
+                            @extend %texto-titulos;
                         }
+                        
+                    @include phone {
+                        padding: $pad-bot;
+                    }
+                    
                     }
                 }
             }
         }
 
-        @media only screen and (max-width:576px) {
+        @include phone {
             font-size: $size-fuente-responsive;
         }
     }
