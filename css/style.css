@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+.disclaimer {
+  display: none;
+}
+
 footer nav div div div ul {
   display: flex;
   flex-direction: column;
@@ -150,7 +154,7 @@ footer nav div div div ul li a:hover {
   }
 }
 .nosotros div div div h2 {
-  padding: 75px 0px;
+  padding: 25px 0px;
 }
 @media only screen and (max-width: 576px) {
   .nosotros div div div h2 {
