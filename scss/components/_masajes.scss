@@ -34,11 +34,10 @@
                         h2 {
                             @extend %texto-titulos;
                         }
-                        
-                    @include phone {
-                        padding: $pad-bot;
-                    }
-                    
+
+                        @include phone {
+                            padding: $pad-bot;
+                        }
                     }
                 }
             }

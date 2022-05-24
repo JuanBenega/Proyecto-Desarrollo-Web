@@ -7,13 +7,12 @@
             @extend %texto-titulos;
             padding: $pad-h1;
 
-            
+
             @include phone {
                 padding: 10px 5px;
             }
         }
 
-        // Articulos
         div {
             div {
                 img {
