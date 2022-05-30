@@ -148,9 +148,6 @@ footer nav div div div ul li a:hover {
 .nosotros div div div div div img {
   object-fit: cover;
 }
-.nosotros div div div div div img:hover {
-  transform: scale(110%);
-}
 @media only screen and (max-width: 576px) {
   .nosotros div div .imagenes {
     display: none;
@@ -182,9 +179,6 @@ footer nav div div div ul li a:hover {
   .main-bien-entre div h1 {
     padding: 10px 5px;
   }
-}
-.main-bien-entre div div div img:hover {
-  transform: scale(110%);
 }
 .main-bien-entre div div div {
   align-self: center;
@@ -220,11 +214,7 @@ footer nav div div div ul li a:hover {
   justify-content: center;
 }
 .masajes div div div div div img {
-  width: 100%;
   object-fit: cover;
-}
-.masajes div div div div div img:hover {
-  transform: scale(110%);
 }
 .masajes div div div div div {
   text-align: center;

@@ -17,10 +17,6 @@
             div {
                 img {
                     @extend %sombra-imagenes;
-
-                    &:hover {
-                        transform: scale(110%);
-                    }
                 }
             }
 

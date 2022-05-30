@@ -45,10 +45,6 @@
                         img {
                             object-fit: cover;
                             @extend %sombra-imagenes;
-
-                            &:hover {
-                                transform: scale(110%);
-                            }
                         }
                     }
                 }
