@@ -22,6 +22,10 @@
                             width: 100%;
                             object-fit: cover;
                             @extend %sombra-imagenes;
+
+                            &:hover {
+                                transform: scale(110%);
+                            }
                         }
                     }
                 }

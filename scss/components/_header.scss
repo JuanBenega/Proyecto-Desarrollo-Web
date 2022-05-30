@@ -10,6 +10,10 @@ header {
             a {
                 width: 25%;
 
+                &:hover {
+                    transform: scale(110%);
+                }
+                
                 @include phone {
                     width: 60%;
                 }
@@ -30,6 +34,7 @@ header {
 
                         @include phone {
                             font-size: $size-fuente-responsive;
+                            padding-left: 10px;
                         }
                     }
                 }

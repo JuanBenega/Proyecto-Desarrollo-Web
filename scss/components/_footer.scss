@@ -1,6 +1,3 @@
-@import '../../scss/base/extends.scss';
-
-
 footer {
     background-image: linear-gradient(to bottom, white, #67b967);
     @extend %flex-evenly;
@@ -11,12 +8,18 @@ footer {
         div {
             div {
                 div {
+                    a {
+                        &:hover {
+                            transform: scale(110%);
+                        }
+                    }
                     ul {
                         /*estilo menú footer*/
                         font-family: $fuente;
                         list-style: none;
                         font-weight: bold;
                         font-size: $size-fuente-footer;
+                        padding-left: 0px;
                         @extend %flex-column;
 
                         li {
