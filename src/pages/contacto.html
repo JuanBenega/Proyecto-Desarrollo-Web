@@ -96,11 +96,13 @@
                     <form class="row g-3" id="form">
                         <div class="col-10 ms-3">
                             <label for="Name" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="Name" name="nombre" required>
+                            <input type="text" class="form-control" id="Name" placeholder="Nombre" name="nombre"
+                                required>
                         </div>
                         <div class="col-10 ms-3">
                             <label for="LastName" class="form-label">Apellido</label>
-                            <input type="text" class="form-control" id="LastName" name="apellido" required>
+                            <input type="text" class="form-control" id="LastName" placeholder="Apellido" name="apellido"
+                                required>
                         </div>
                         <div class="col-10 ms-3">
                             <label for="Email" class="form-label">Email</label>
@@ -108,42 +110,12 @@
                                 name="email" required>
                         </div>
                         <div class="col-10 ms-3">
-                            <label for="Address" class="form-label">Dirección</label>
-                            <input type="text" class="form-control" id="Address" placeholder="Calle y número"
-                                name="direccion" required>
+                            <label for="Address" class="form-label">Consulta</label>
+                            <textarea class="form-control" id="Address" name="direccion" rows="4"></textarea>
                         </div>
-                        <div class="col-10 ms-3">
-                            <label for="City" class="form-label">Ciudad</label>
-                            <input type="text" class="form-control" id="City" name="ciudad">
+                        <div class="col-10 d-flex justify-content-end">
+                            <input type="submit" id="button" class="btn btn-primary" value="Enviar">
                         </div>
-                        <fieldset class="row mb-3 mt-3">
-                            <legend class="col-form-label col-sm-2 pt-0 ms-3">Actividad</legend>
-                            <div class="col-sm-9 ms-3">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
-                                        value="option1" checked>
-                                    <label class="form-check-label" for="gridRadios1">
-                                        Entrenamiento
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
-                                        value="option2">
-                                    <label class="form-check-label" for="gridRadios2">
-                                        Pilates
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3"
-                                        value="option3">
-                                    <label class="form-check-label" for="gridRadios3">
-                                        Masajes
-                                    </label>
-                                </div>
-                            </div>
-                        </fieldset>
-                        <div class="col-8 d-flex justify-content-end">
-                            <input type="submit" id="button" class="btn btn-primary" value="Enviar">                        </div>
                     </form>
 
                     <!-- JS para enviar el mail por EmailJS.com -->
@@ -154,7 +126,6 @@
                         emailjs.init('NmWDZyevDrFHicMLL')
                     </script>
                     <!-- Fin de JS para envío de mail-->
-
                 </div>
                 <!-- Fin Formulario de contacto -->
 
@@ -254,10 +225,8 @@
                         alert(JSON.stringify(err));
                     });
             });
-
     </script>
     <!-- Fin Script para  cambio de mensaje en botón -->
-
 </body>
 
 </html>
