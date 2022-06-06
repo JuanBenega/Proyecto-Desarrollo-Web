@@ -17,6 +17,17 @@
                     @include phone {
                         font-size: $size-fuente-responsive;
                     }
+
+                    div {
+                        & .boton {
+                            @extend %boton-menu;
+
+                            &:hover {
+                                @extend %boton-menu-hover;
+                                transform: scale(110%);
+                            }
+                        }
+                    }
                 }
             }
 

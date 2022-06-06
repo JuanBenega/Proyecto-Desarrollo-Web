@@ -34,25 +34,44 @@
 <body>
 
     <!--Header-->
-    <header class="header">
+    <header>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand header-logo" href="../../index.html">
-                    <img src="../media/images/Logo.png" alt="Logo Cuerpo y Armonía" class="img-fluid">
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../media/images/Logo.png" alt="Logo Cuerpo y Armonía" class="img-fluid"
+                        srcset="../media/images/logo-small.png 175w, ../media/images//Logo.png 698w" sizes="50vw">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link m-2 p-2" href="../pages/bienestar.html">Bienestar</a>
-                        <a class="nav-link m-2 p-2" href="../pages/entrenamiento.html">Entrenamiento</a>
-                        <a class="nav-link m-2 p-2" href="../pages/masajes.html">Masajes</a>
-                        <a class="nav-link m-2 p-2" href="../pages/contacto.html">Contacto</a>
-                    </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item m-2 p-2">
+                            <a class="nav-link m-2 p-2" href="../../index.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown m-2 p-2">
+                            <a class="nav-link m-2 p-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+                            <ul class="dropdown-menu menu-servicios" aria-labelledby="navbarDropdownMenuLink">
+                                <li>
+                                    <a class="dropdown-item m-2 p-2"
+                                        href="../pages/entrenamiento.html">Entrenamiento</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item m-2 p-2" href="../pages/masajes.html">Masajes</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item m-2 p-2">
+                            <a class="nav-link m-2 p-2" href="../pages/bienestar.html">Artículos de Binestar</a>
+                        </li>
+                        <li class="nav-item m-2 p-2">
+                            <a class="nav-link m-2 p-2" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -67,14 +86,17 @@
             <!-- Articulo 1 -->
             <div class="row">
                 <div class="col-lg-8 article">
-                    <h2>Programa Entrenamiento Bases</h2>
+                    <h2>Programa Bases</h2>
                     <p>La base del bienestar corporal es tener un cuerpo fuerte, flexible y resistente. Uno de los
                         mayores problemas de la actualidad es el sedentarismo y la poca movilidad corporal, esto trae
                         consigo problemas como obesidad, hipertensión, diabetes, fragilidad corporal, etc. Tengas la
-                        edad que tengas y la condición física que tengas es importante que empieces a entrenar. En este
-                        programa se trabaja incrementando progresivamente la intensidad para evitar riesgo a lesiones,
-                        además se desarrollan las capacidades corporales principales (fuerza, resistencia y movilidad,
-                        entre otras). Este programa de entrenamiento te permitirá formar las bases para tener un cuerpo
+                        edad que tengas y sin importar las condiciones físicas en las que te encuentres es importante
+                        que empieces a entrenar.
+                        En este programa se trabaja incrementando progresivamente la intensidad para evitar lesiones,
+                        además se busca desarrollar paulatinamente las capacidades corporales principales como la
+                        fuerza, la resistencia y la movilidad,
+                        entre otras). Este programa de entrenamiento te permitirá establecer las bases para tener un
+                        cuerpo
                         más fuerte y sano.</p>
                 </div>
                 <div class="col-lg-4">
@@ -93,13 +115,14 @@
                         data-aos-duration="2000">
                 </div>
                 <div class="col-lg-8 article">
-                    <h2>Programa Entrenamiento Pilates</h2>
-                    <p>El Método Pilates es un conjunto de movimientos controlados para el cuerpo y la mente. Dichos
-                        movimientos y ejercicios también se realizan sobre colchonetas y camas de pilates diseñadas
-                        especialmente para una correcta ejecución. Tiene como objetivo fortalecer el cuerpo y la mente
-                        desde la parte más profunda a la más superficial, aumentando y uniendo el dinamismo y la fuera
-                        muscular con el control mental, la relajación y la respiración. Es una disciplina que combina
-                        técnicas de gimnasia, ballet y yoga.</p>
+                    <h2>Programa Pilates Reformer</h2>
+                    <p>El Método Pilates Reformer permite un sin número de ejercicios controlados para trabajar el
+                        cuerpo activando todos los grupos musculares.
+                        Teniendo en cuenta elementos vitales como la concentración, la respiración, el control, la
+                        precisión y el equilibrio. Con el Entrenamiento de Pilates se puede combinar la insistencia en
+                        la flexibilidad propia del Yoga, con el acento en la fuerza muscular que se encuentra en los
+                        gimnasios, pero sin perder de vista la integridad del cuerpo buscando un equilibrio natural
+                        y teniendo en consideración los factores necesarios para mantener un cuerpo sano.</p>
                     </article>
                 </div>
             </div>
@@ -108,13 +131,15 @@
             <!-- Articulo 3 -->
             <div class="row">
                 <div class="col-lg-8 article">
-                    <h2>Programa Entrenamiento Corporal</h2>
+                    <h2>Programa Fitness Global</h2>
                     <p>Es posible tener un cuerpo fuerte y funcional para la vida diaria entrenando solamente con tu
-                        cuerpo. Los ejercicios corporales fueron utilizados por muchas civilizaciones en la antiguedad,
-                        y se basan en ejercicios que involucran varios grupos musculares simultáneamente para poder
-                        realizarlos. Esto hace que tu cuerpo tenga que trabajar de manera coordinada, por lo que además
-                        de la fuerza trabajas la estabilidad y la coordinación. Este programa de entrenamiento te
-                        permitirá desarrollar un cuerpo fuerte, sano y saludable.</p>
+                        cuerpo. Los "ejercicios corporales" fueron utilizados por muchas civilizaciones en la
+                        antiguedad,
+                        y se basan en ejercicios calisténicos que involucran varios grupos musculares en forma
+                        simultánea impulsando a que el cuerpo tenga que trabajar apelando a la
+                        estabilidad y la coordinación. Este programa de entrenamiento te
+                        permitirá desarrollar la capacidad aeróbica, la resistencia muscular, la fuerza, la potencia... Logrando alcanzar un
+                        cuerpo fuerte y saludable.</p>
                 </div>
                 <div class="col-lg-4">
                     <img src="../media/images/entrenamiento-3.avif" class="rounded img-fluid"

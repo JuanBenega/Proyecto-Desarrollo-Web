@@ -43,17 +43,35 @@
                         srcset="src/media/images/logo-small.png 175w, src/media/images/Logo.png 698w" sizes="50vw">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link m-2 p-2" href="src/pages/bienestar.html">Bienestar</a>
-                        <a class="nav-link m-2 p-2" href="src/pages/entrenamiento.html">Entrenamiento</a>
-                        <a class="nav-link m-2 p-2" href="src/pages/masajes.html">Masajes</a>
-                        <a class="nav-link m-2 p-2" href="src/pages/contacto.html">Contacto</a>
-                    </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item m-2 p-2">
+                            <a class="nav-link m-2 p-2" href="index.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown m-2 p-2">
+                            <a class="nav-link m-2 p-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+                            <ul class="dropdown-menu menu-servicios" aria-labelledby="navbarDropdownMenuLink">
+                                <li>
+                                    <a class="dropdown-item m-2 p-2"
+                                        href="src/pages/entrenamiento.html">Entrenamiento</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item m-2 p-2" href="src/pages/masajes.html">Masajes</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item m-2 p-2">
+                            <a class="nav-link m-2 p-2" href="src/pages/bienestar.html">Artículos de Binestar</a>
+                        </li>
+                        <li class="nav-item m-2 p-2">
+                            <a class="nav-link m-2 p-2" href="src/pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -71,12 +89,12 @@
                     <h2>Quienes somos...</h2>
                     <p>
                         Nuestra misión es poder orientarte en una transición hacia un estilo de vida más
-                        saludable y beneficioso para tu ser. En un enfoque holístico nos basamos en los pilares de la
-                        alimentación, la actividad física y la conexión con la naturaleza. Toda persona puede estar en
-                        <span>Armonía con su Cuerpo</span>, con una alimentación sana y el entrenamiento adecuado, y en
-                        <span>Armonía con su Ser</span>, conectando con la experiencia del propio cuerpo mediante
-                        diferentes prácticas como la meditación, la comtemplación y aprendiendo a disfrutar el momento
-                        presente.
+                        saludable y beneficioso. Desde un enfoque holístico nos basamos en los pilares de la buena
+                        alimentación, la actividad física adecuada y la conexión con la naturaleza, para lograr de esta
+                        manera un<span> Cuerpo en Armonía</span>. Proponemos la conexión con las experiencias vividas
+                        a traves del propio cuerpo y mediante la implementación de diferentes prácticas como la
+                        meditación, la comtemplación y el aprendizaje de disfrutar el momento presente buscando estar en
+                        <span>Armonía con los demás planos</span>.
                     </p>
                 </div>
                 <!-- Fin sección Texto Nosotros -->

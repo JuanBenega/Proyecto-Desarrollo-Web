@@ -1,5 +1,5 @@
 footer {
-    background-image: linear-gradient(to bottom, white, #67b967);
+    background-image: linear-gradient(to bottom, $color-fondo, $color-prim);
     @extend %flex-evenly;
 
     nav {

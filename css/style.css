@@ -20,16 +20,17 @@ footer {
   align-items: center;
 }
 
-header nav div div div a {
+.turno div div div form div .boton, header nav div div ul li .menu-servicios li a, header nav div div ul li a {
   background-color: #67b967;
   border-radius: 10px;
+  color: lightgray;
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.438);
   transition: all 0.5s;
 }
 
-header nav div div div a:hover {
+.turno div div div form div .boton:hover, header nav div div ul li .menu-servicios li a:hover, header nav div div ul li a:hover {
   background-color: lightgray;
-  color: #67b967;
+  color: white;
   box-shadow: none;
 }
 
@@ -64,16 +65,36 @@ header nav div a:hover {
     width: 60%;
   }
 }
-header nav div div div a {
+header nav div div ul li a {
   font-family: "Poppins", sans-serif;
   font-size: 1.3rem;
   width: auto;
 }
-header nav div div div a:hover {
+header nav div div ul li a:hover {
   transform: scale(110%);
 }
 @media only screen and (max-width: 576px) {
-  header nav div div div a {
+  header nav div div ul li a {
+    font-size: 1rem;
+    padding-left: 10px;
+  }
+}
+header nav div div ul li .menu-servicios {
+  background-color: unset;
+  background-clip: unset;
+  border-radius: unset;
+  border: unset;
+}
+header nav div div ul li .menu-servicios li a {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  width: auto;
+}
+header nav div div ul li .menu-servicios li a:hover {
+  transform: scale(110%);
+}
+@media only screen and (max-width: 576px) {
+  header nav div div ul li .menu-servicios li a {
     font-size: 1rem;
     padding-left: 10px;
   }
@@ -246,6 +267,9 @@ footer nav div div div ul li a:hover {
   .turno div div div form {
     font-size: 1rem;
   }
+}
+.turno div div div form div .boton:hover {
+  transform: scale(110%);
 }
 .turno div div div {
   align-items: flex-start;

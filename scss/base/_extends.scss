@@ -12,15 +12,16 @@
 }
 
  %boton-menu {
-    background-color: #67b967;
+    background-color: $color-prim;
     border-radius: 10px;
+    color: $color-sec;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.438);
     transition: all 0.5s;
 }
 
 %boton-menu-hover {
-    background-color: lightgray;
-    color: #67b967;
+    background-color: $color-sec;
+    color: $color-fondo;
     box-shadow: none;
 }
 
